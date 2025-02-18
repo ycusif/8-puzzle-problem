@@ -24,7 +24,7 @@ This project solves the **8-Puzzle Problem** using six different AI search algor
 ```
 
 ## 🎮 Live Demo (Google Colab)
-[![Run in Google Colab](
+[![Run in Google Colab](https://colab.research.google.com/drive/1PHn0qnq4dWc9R58S_MY5mlCpzTqcfye7?usp=sharing)
 ## 📂 Project Structure
 ```
 📦 8-Puzzle-Solver
@@ -33,9 +33,7 @@ This project solves the **8-Puzzle Problem** using six different AI search algor
 │   ├── 8_puzzle_solver.py
 ├── 📂 Docs
 │   ├── algorithms_explanation.md
-│   ├── installation_guide.md
-└── 📂 LiveDemo
-    ├── 8_puzzle_demo.ipynb
+│   ├── images
 ```
 
 ## 📜 References
