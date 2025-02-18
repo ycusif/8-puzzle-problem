@@ -1,0 +1,113 @@
+# 📜 8-Puzzle Problem - Algorithm Documentation
+
+## 📌 Introduction
+The **8-Puzzle Problem** is a classic AI problem where the objective is to move numbered tiles in a 3×3 grid to reach a goal configuration using different search strategies.
+
+## 🎯 Goal State
+```
+[1, 0, 3]
+[8, 2, 4]
+[7, 6, 5]
+```
+
+## 🚀 Implemented Algorithms
+This project implements **six search algorithms**:
+
+### **1️⃣ Breadth-First Search (BFS)**
+- **Type:** Uninformed Search
+- **How it Works:**
+  - Explores all possible moves **level by level**.
+  - Uses a **queue (FIFO)** for node expansion.
+  - **Guaranteed** to find the shortest path but **requires more memory**.
+- **Example Execution:**
+  ```
+  Initial State:
+  [2, 8, 3]
+  [1, 4, 0]
+  [7, 6, 5]
+  
+  Expanding Nodes:
+  → Move Blank Left
+  → Move Blank Up
+  → Move Blank Right
+  
+  Final Solution Found!
+  ```
+
+### **2️⃣ Depth-First Search (DFS)**
+- **Type:** Uninformed Search
+- **How it Works:**
+  - Explores one path deeply before backtracking.
+  - Uses a **stack (LIFO)**.
+  - **Faster but may not find the shortest path**.
+- **Example Execution:**
+  ```
+  Initial State:
+  [2, 8, 3]
+  [1, 4, 0]
+  [7, 6, 5]
+  
+  Expanding Deep Nodes First:
+  → Move Blank Up
+  → Move Blank Left
+  → Backtracking
+  ```
+
+### **3️⃣ Uniform Cost Search (UCS)**
+- **Type:** Uninformed Search
+- **How it Works:**
+  - Expands the **least-cost path first**.
+  - Guarantees **finding the optimal solution**.
+  - Uses a **priority queue**.
+- **Example Execution:**
+  ```
+  Initial State:
+  [2, 8, 3]
+  [1, 4, 0]
+  [7, 6, 5]
+  
+  Expanding Nodes Based on Cost:
+  → Move Blank Right (Cost 1)
+  → Move Blank Left (Cost 2)
+  → Move Blank Up (Cost 3)
+  ```
+
+### **4️⃣ Greedy Best-First Search**
+- **Type:** Heuristic Search
+- **How it Works:**
+  - Chooses moves based on a **heuristic function (Manhattan Distance)**.
+  - **Faster than BFS/UCS but may get stuck in suboptimal paths**.
+- **Heuristic Calculation:**
+  ```
+  h(n) = Sum of Manhattan distances of all misplaced tiles
+  ```
+
+### **5️⃣ Hill Climbing**
+- **Type:** Local Search Algorithm
+- **How it Works:**
+  - Moves to the **neighbor with the lowest heuristic cost**.
+  - Can **get stuck in local optima** and may **fail to find the best solution**.
+
+### **6️⃣ A* Search (A-Star)**
+- **Type:** Heuristic Search
+- **How it Works:**
+  - Uses a combination of **cost (g) + heuristic (h)**.
+  - Guarantees the **optimal solution if the heuristic is admissible**.
+- **Formula Used:**
+  ```
+  f(n) = g(n) + h(n)
+  ```
+
+## 🔍 Complexity Comparison
+| Algorithm  | Completeness | Optimality | Time Complexity | Space Complexity |
+|------------|-------------|------------|----------------|----------------|
+| BFS        | ✅ Yes | ✅ Yes (if unweighted) | O(V + E) | O(V) |
+| DFS        | ❌ No  | ❌ No  | O(V + E) | O(V) |
+| UCS        | ✅ Yes | ✅ Yes  | O(V + E) | O(V) |
+| Greedy     | ❌ No  | ❌ No  | O(V + E) | O(V) |
+| Hill Climbing | ❌ No | ❌ No | O(V + E) | O(V) |
+| A* Search  | ✅ Yes | ✅ Yes (if heuristic is admissible) | O(V + E) | O(V) |
+
+## 📜 References
+- **Artificial Intelligence: A Modern Approach** - Stuart Russell & Peter Norvig  
+- **GeeksforGeeks: 8-Puzzle Problem Explanation**  
