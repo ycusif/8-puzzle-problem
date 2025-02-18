@@ -22,9 +22,10 @@ This project solves the **8-Puzzle Problem** using six different AI search algor
 6️⃣ **[A* Search (A-Star)](Algorithms/8_puzzle_solver.py)** – Uses cost and heuristics for an optimal solution.  
 
 ```
-
-## 🎮 Live Demo (Google Colab)
+🎮 Live Demo (Google Colab)
 [![Run in Google Colab](https://colab.research.google.com/drive/1PHn0qnq4dWc9R58S_MY5mlCpzTqcfye7?usp=sharing)
+
+
 ## 📂 Project Structure
 ```
 📦 8-Puzzle-Solver
