@@ -14,26 +14,25 @@ This project solves the **8-Puzzle Problem** using six different AI search algor
 ```
 
 ## 🚀 Implemented Algorithms
-1️⃣ **[Breadth-First Search (BFS)](Algorithms/8_puzzle_solver.py)** – Guarantees shortest path but uses more memory.  
-2️⃣ **[Depth-First Search (DFS)](Algorithms/8_puzzle_solver.py)** – Explores deep paths first but may not be optimal.  
-3️⃣ **[Uniform Cost Search (UCS)](Algorithms/8_puzzle_solver.py)** – Expands the least-cost path first, guaranteeing optimality.  
-4️⃣ **[Greedy Best-First Search](Algorithms/8_puzzle_solver.py)** – Uses heuristics but can get stuck in bad paths.  
-5️⃣ **[Hill Climbing](Algorithms/8_puzzle_solver.py)** – Chooses best local move, but may get stuck in local optima.  
-6️⃣ **[A* Search (A-Star)](Algorithms/8_puzzle_solver.py)** – Uses cost and heuristics for an optimal solution.  
+1️⃣ **[Breadth-First Search (BFS)] – Guarantees shortest path but uses more memory.  
+2️⃣ **[Depth-First Search (DFS)] – Explores deep paths first but may not be optimal.  
+3️⃣ **[Uniform Cost Search (UCS)] – Expands the least-cost path first, guaranteeing optimality.  
+4️⃣ **[Greedy Best-First Search] – Uses heuristics but can get stuck in bad paths.  
+5️⃣ **[Hill Climbing] – Chooses best local move, but may get stuck in local optima.  
+6️⃣ **[A* Search (A-Star)] – Uses cost and heuristics for an optimal solution.  
 
-```
-🎮 Live Demo (Google Colab)
+## 🎮 Live Demo (Google Colab)
 [![Run in Google Colab](https://colab.research.google.com/drive/1PHn0qnq4dWc9R58S_MY5mlCpzTqcfye7?usp=sharing)
-
 
 ## 📂 Project Structure
 ```
 📦 8-Puzzle-Solver
 ├── 📜 README.md
 ├── 📂 Algorithms
-│   ├── 8_puzzle_solver.py
+│   ├── 8puzzle.py
 ├── 📂 Docs
-│   ├── algorithms_explanation.md
+│   ├── explanation
+│   ├── project(3).pdf
 │   ├── images
 ```
 
@@ -41,5 +40,4 @@ This project solves the **8-Puzzle Problem** using six different AI search algor
 - **Artificial Intelligence: A Modern Approach** - Stuart Russell & Peter Norvig  
 - **GeeksforGeeks: 8-Puzzle Problem Explanation**  
 
-🚀 **Solve the 8-Puzzle problem with AI!** 🧠🔥
 
